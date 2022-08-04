@@ -1,0 +1,70 @@
+1) DECISION TREE REGRESSION
+from sklearn.tree import DecisionTreeRegressor
+
+2) RANDOM FOREST REGRESSION
+from sklearn.ensemble import RandomForestRegressor
+regressor =  RandomForestRegressor(n_estimators=10,random_state=0)
+
+3) R-SQUARED NOTATION
+MORE CLOSER TO 1 THE R SQUARE VALUE IS MORE BETTER.(goodness of fit parameter)
+
+4) Adjusted R-SQUARED NOTATION
+
+5) CONFUSION MATRIX
+      ACTUAL
+OB    [TP FP]
+      [FN TN]
+
+6) ACCURACY
+Accuracy: The accuracy is used to find the portion of correctly classified values. 
+It tells us how often our classifier is right. 
+It is the sum of all true values divided by total values.
+
+ACCURACY =     TP+TN
+           ---------------
+             TP+FP+TN+FN
+
+
+7) PRECISION
+Precison :  Precision is used to calculate the model's ability to classify positive values correctly. 
+It is the true positives divided by the total number of predicted positive values.
+
+PRECISION =     TP
+            -----------
+              TP + FP
+
+8) RECALL 
+It is used to calculate the model's ability to predict positive values. 
+"How often does the model predict the correct positive values?". 
+It is the true positives divided by the total number of actual positive values.  
+
+
+RECALL =     TP
+         ----------
+          TP + FN
+
+9) PRECISION CALL
+It is the harmonic mean of Recall and Precision. 
+It is useful when you need to take both Precision and Recall into account.
+
+PRECISION CALL = 2*PRECISION*RECALL
+                 ------------------
+                 PRECISION + RECALL
+
+
+10) LOGISTIC REGRESSION
+from sklearn.linear_model import LogisticRegression
+
+11) KNN 
+from sklearn.neighbours import KNeighboursClassifier
+classifier = KNeighboursClassifier(n_estimators=5,metric="minkowski",p=2)
+p(power parameter) = 1 : manhattan distance
+p = 2 : euclidian distance
+
+12) SVM
+from sklearn.svm import SVC
+classifier = SVC(kernel="linear",random_state=0)
+
+13) K means Clustering
+elbow method for K selection
+rit = random initialization trap

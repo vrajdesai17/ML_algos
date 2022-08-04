@@ -1,0 +1,40 @@
+                        SIMPLE LINEAR REGRESSION
+                       --------------------------
+
+1) Formula : y = mx + c
+   where, 
+   y = Dependent Variable
+   x = Independent Variable
+   m = Slope which is basically like a connector between x and y for eg :
+       one unit change in x will cause 2 units change in y
+   c = constant
+
+2) Salary V/s Experience
+
+Salary
+^
+|  .---/
+|     /(best fit line)
+|    /---.
+|   /
+|  /----.(other data points)
+| /
+|/(assume this start point as 30K...so x = 0 hence y=c...hence it means that for eg. when person enters a company with zero Experience,his salary would be 30K)
+|
+|__________________________________> Experience
+
+
+3) .(actual observation(yi))
+   | 
+   |
+   |
+___.___(Modeled observation(y^))
+
+4) The distance between above two points d: yi - y^
+
+5) Simple linear regression will draw several lines and compute this: SUM(square(d))
+   for each line.The line with the minimum value will be the best fit line.
+   This is called ordinary least squares method.
+
+6) Regression Models are branches of ML that aim to predict some continous
+   real numbers like salary or temprature.

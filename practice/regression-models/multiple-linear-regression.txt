@@ -1,0 +1,27 @@
+                         MULTIPLE LINEAR REGRESSION
+                        ----------------------------
+
+1) Formula : y = c + m1x1 + m2x2 +.....+mnxn 
+
+2) Steps for building a model :
+   a) All in : When you have to use all the independent variables / predictors for a model.
+   b) Backward Elimination :- 
+      Step 1 : Select a significance level to stay in the model(e.g. SL(statistical significance) = 0.05)
+      Step 2 : Fit the model with all possible predictors.
+      Step 3 : Consider the predictor with the highest P-value. If P > SL,go to Step 4,otherwise go to FIN.
+      Step 4 : Remove the predictor.
+      Step 5 : Fit the model without this Variable.(go back to step 3)
+   c) Forward Selection :-
+      Step 1 : Select a significance level to enter the model(e.g. Sl = 0.05)
+      Step 2 : Fit all simple regression models y ~ xn. Select the one with lowest P value.
+      Step 3 : Keep this variable and fit all possible models with one extra predictor added to the one you already have.
+      Step 4 : Consider the predictor with lowest P-value.If P < SL,go to Step 3,otherwise go to FIN.
+   d) Bidirectional Elimination :-
+      Step 1 : Select a significance level to enter and stay in the model.(e.g. SLENTER = 0.05,SLSTAY = 0.05)
+      Step 2 : Perform the next step of Forward Selection(new variables must have : P < SLENTER to enter)
+      Step 3 : Perform all steps of Backward Elimination(old variables must have P < SLSTAY to stay)[go back to step 2]
+      Step 4 : No new variables can enter and no old variables can exit.
+   e) All possible models :-
+      Step 1 : Select a criterion of goodness of fit(e.g. Akaike criterion)
+      Step 2 : Construct all possible regression models: 2^N - 1 total combinations(N=variables)
+      Step 3 : Select the one with the best criterion

@@ -1,0 +1,47 @@
+1) LINEAR REGRESSION MODEL 
+a) Importing the libraries
+b) Importing the dataset
+c) Taking care of the missing values / Encoding the categorical data(not mandatory depends)
+d) Splitting the datset into training,test set
+e) Training the simple linear regression model on the training set
+f) predicting the test set result
+g) visiualizing the training set results
+h) visiualizing the test set results
+
+
+2) MULTIPLE REGRESSION MODEL
+a) Importing the libraries
+b) Importing the dataset
+c) Taking care of the missing values / Encoding the categorical data(not mandatory depends)
+d) Splitting the datset into training,test set
+e) Training the multiple linear regression model on the training set(same method as simple linear regression)
+f) predicting the test set result
+
+
+note : training :-
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(x_train,y_train)
+
+
+3) POLYNOMIAL REGRESSION MODEL
+a) Importing the libraries
+b) Importing the dataset
+c) Taking care of the missing values / Encoding the categorical data(not mandatory depends)
+d) Splitting the datset into training,test set(exceptionally not there)
+e) Training the simple linear regression model on the training set / whole dataset
+f) Training the polynomial linear regression model on the training set / whole dataset
+g) visiualizing the simple linear regression model
+h) visiualizing the polynomial linear regression model
+i) predicting new result in simple linear regression model
+j) predicting new result in polynomial linear regression model
+
+
+4) SUPPORT VECTOR REGRESSION
+a) Importing the libraries
+b) Importing the dataset
+c) Feature Scaling 
+d) Training the svr model on whole dataset
+e) predicting the new result
+f) visiualizing the svr result
+

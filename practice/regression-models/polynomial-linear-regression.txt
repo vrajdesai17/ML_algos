@@ -1,0 +1,4 @@
+                         POLYNOMIAL LINEAR REGRESSION
+                        ----------------------------
+
+1) Formula : y = c + m1.x1 + m2.x1^2 + m3.x1^3.....+mn.x1^n 
